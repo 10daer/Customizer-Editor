@@ -446,6 +446,7 @@ let dragStartPos = { x: 0, y: 0 };
 
 // DOM elements
 const baseImage = document.getElementById("baseImage");
+const skeleton = document.getElementById("imageSkeleton");
 const imageContainer = document.getElementById("imageContainer");
 const textControlsContainer = document.getElementById("text-controls");
 const exportBtn = document.getElementById("exportBtn");
@@ -509,7 +510,6 @@ function handleKidsChange(e) {
   e.target.parentElement.classList.add("selected");
 
   currentKids = parseInt(e.target.value);
-  updateTemplate();
   updateImageSource();
 }
 
@@ -525,10 +525,29 @@ function handleColorChange(e) {
 }
 
 function updateImageSource() {
-  // Update the image source based on category, color, and kids
-  baseImage.src = `${currentCategory}/${currentColor} Mug/${currentKids} Kid${
+  clearOverlays();
+
+  baseImage.style.display = "none";
+
+  // Show loader and hide image
+  skeleton.style.display = "block";
+
+  // Construct new image URL
+  const imageUrl = `${currentCategory}/${currentColor} Mug/${currentKids} Kid${
     currentKids > 1 ? "s" : ""
   } ${currentColor} Mug.jpeg`;
+
+  // Set image source
+  baseImage.src = imageUrl;
+
+  // Wait for it to fully load
+  baseImage.onload = function () {
+    // Hide loader and show image
+    skeleton.style.display = "none";
+    baseImage.style.display = "block";
+
+    updateTemplate();
+  };
 }
 
 function updateTemplate() {
