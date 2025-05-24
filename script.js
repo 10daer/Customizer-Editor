@@ -9,6 +9,7 @@ const defaultTemplates = {
           xPercent: 36,
           yPercent: 53,
           rotation: 5,
+          fontSize: 14,
         },
         {
           id: "text2",
@@ -16,6 +17,7 @@ const defaultTemplates = {
           xPercent: 66,
           yPercent: 44.5,
           rotation: -16,
+          fontSize: 14,
         },
         {
           id: "text3",
@@ -23,6 +25,7 @@ const defaultTemplates = {
           xPercent: 66,
           yPercent: 57,
           rotation: 6,
+          fontSize: 14,
         },
       ],
     },
@@ -34,6 +37,7 @@ const defaultTemplates = {
           xPercent: 36.5,
           yPercent: 55,
           rotation: 5,
+          fontSize: 14,
         },
         {
           id: "text2",
@@ -41,6 +45,7 @@ const defaultTemplates = {
           xPercent: 67,
           yPercent: 52.5,
           rotation: -5,
+          fontSize: 14,
         },
       ],
     },
@@ -52,6 +57,7 @@ const defaultTemplates = {
           xPercent: 36,
           yPercent: 54,
           rotation: 5,
+          fontSize: 14,
         },
         {
           id: "text2",
@@ -59,6 +65,7 @@ const defaultTemplates = {
           xPercent: 64,
           yPercent: 38.5,
           rotation: -24,
+          fontSize: 14,
         },
         {
           id: "text3",
@@ -66,6 +73,7 @@ const defaultTemplates = {
           xPercent: 67.7,
           yPercent: 51.5,
           rotation: -5,
+          fontSize: 14,
         },
         {
           id: "text4",
@@ -73,6 +81,7 @@ const defaultTemplates = {
           xPercent: 62.5,
           yPercent: 66,
           rotation: 23,
+          fontSize: 14,
         },
       ],
     },
@@ -84,6 +93,7 @@ const defaultTemplates = {
           xPercent: 36,
           yPercent: 52,
           rotation: 5,
+          fontSize: 14,
         },
         {
           id: "text2",
@@ -91,6 +101,7 @@ const defaultTemplates = {
           xPercent: 59,
           yPercent: 31,
           rotation: -50,
+          fontSize: 14,
         },
         {
           id: "text3",
@@ -98,6 +109,7 @@ const defaultTemplates = {
           xPercent: 68.5,
           yPercent: 43,
           rotation: -20,
+          fontSize: 14,
         },
         {
           id: "text4",
@@ -105,6 +117,7 @@ const defaultTemplates = {
           xPercent: 68,
           yPercent: 55,
           rotation: 5,
+          fontSize: 14,
         },
         {
           id: "text5",
@@ -112,6 +125,7 @@ const defaultTemplates = {
           xPercent: 59,
           yPercent: 67,
           rotation: 45,
+          fontSize: 14,
         },
       ],
     },
@@ -123,6 +137,7 @@ const defaultTemplates = {
           xPercent: 36,
           yPercent: 52,
           rotation: 5,
+          fontSize: 14,
         },
         {
           id: "text2",
@@ -130,6 +145,7 @@ const defaultTemplates = {
           xPercent: 48,
           yPercent: 29,
           rotation: -80,
+          fontSize: 14,
         },
         {
           id: "text3",
@@ -137,6 +153,7 @@ const defaultTemplates = {
           xPercent: 63,
           yPercent: 38,
           rotation: -35,
+          fontSize: 14,
         },
         {
           id: "text4",
@@ -144,6 +161,7 @@ const defaultTemplates = {
           xPercent: 66,
           yPercent: 50,
           rotation: -10,
+          fontSize: 14,
         },
         {
           id: "text5",
@@ -151,6 +169,7 @@ const defaultTemplates = {
           xPercent: 62,
           yPercent: 61,
           rotation: 25,
+          fontSize: 14,
         },
         {
           id: "text6",
@@ -158,6 +177,7 @@ const defaultTemplates = {
           xPercent: 49.5,
           yPercent: 69,
           rotation: 60,
+          fontSize: 14,
         },
       ],
     },
@@ -169,6 +189,7 @@ const defaultTemplates = {
           xPercent: 37,
           yPercent: 52,
           rotation: 5,
+          fontSize: 14,
         },
         {
           id: "text2",
@@ -176,6 +197,7 @@ const defaultTemplates = {
           xPercent: 44,
           yPercent: 30,
           rotation: -90,
+          fontSize: 14,
         },
         {
           id: "text3",
@@ -183,6 +205,7 @@ const defaultTemplates = {
           xPercent: 57,
           yPercent: 31,
           rotation: -70,
+          fontSize: 14,
         },
         {
           id: "text4",
@@ -190,6 +213,7 @@ const defaultTemplates = {
           xPercent: 67,
           yPercent: 42,
           rotation: -30,
+          fontSize: 14,
         },
         {
           id: "text5",
@@ -197,6 +221,7 @@ const defaultTemplates = {
           xPercent: 65,
           yPercent: 56,
           rotation: 25,
+          fontSize: 14,
         },
         {
           id: "text6",
@@ -204,6 +229,7 @@ const defaultTemplates = {
           xPercent: 56,
           yPercent: 66,
           rotation: 50,
+          fontSize: 14,
         },
         {
           id: "text7",
@@ -211,6 +237,7 @@ const defaultTemplates = {
           xPercent: 44,
           yPercent: 70,
           rotation: 86,
+          fontSize: 14,
         },
       ],
     },
@@ -224,6 +251,7 @@ const defaultTemplates = {
           xPercent: 36,
           yPercent: 53,
           rotation: 5,
+          fontSize: 14,
         },
         {
           id: "text2",
@@ -231,6 +259,7 @@ const defaultTemplates = {
           xPercent: 66,
           yPercent: 44.5,
           rotation: -16,
+          fontSize: 14,
         },
         {
           id: "text3",
@@ -238,6 +267,7 @@ const defaultTemplates = {
           xPercent: 66,
           yPercent: 57,
           rotation: 6,
+          fontSize: 14,
         },
       ],
     },
@@ -249,6 +279,7 @@ const defaultTemplates = {
           xPercent: 36.5,
           yPercent: 55,
           rotation: 5,
+          fontSize: 14,
         },
         {
           id: "text2",
@@ -256,6 +287,7 @@ const defaultTemplates = {
           xPercent: 67,
           yPercent: 52.5,
           rotation: -5,
+          fontSize: 14,
         },
       ],
     },
@@ -267,6 +299,7 @@ const defaultTemplates = {
           xPercent: 36,
           yPercent: 54,
           rotation: 5,
+          fontSize: 14,
         },
         {
           id: "text2",
@@ -274,6 +307,7 @@ const defaultTemplates = {
           xPercent: 64,
           yPercent: 38.5,
           rotation: -24,
+          fontSize: 14,
         },
         {
           id: "text3",
@@ -281,6 +315,7 @@ const defaultTemplates = {
           xPercent: 67.7,
           yPercent: 51.5,
           rotation: -5,
+          fontSize: 14,
         },
         {
           id: "text4",
@@ -288,6 +323,7 @@ const defaultTemplates = {
           xPercent: 62.5,
           yPercent: 66,
           rotation: 23,
+          fontSize: 14,
         },
       ],
     },
@@ -299,6 +335,7 @@ const defaultTemplates = {
           xPercent: 36,
           yPercent: 52,
           rotation: 5,
+          fontSize: 14,
         },
         {
           id: "text2",
@@ -306,6 +343,7 @@ const defaultTemplates = {
           xPercent: 59,
           yPercent: 31,
           rotation: -50,
+          fontSize: 14,
         },
         {
           id: "text3",
@@ -313,6 +351,7 @@ const defaultTemplates = {
           xPercent: 68.5,
           yPercent: 43,
           rotation: -20,
+          fontSize: 14,
         },
         {
           id: "text4",
@@ -320,6 +359,7 @@ const defaultTemplates = {
           xPercent: 68,
           yPercent: 55,
           rotation: 5,
+          fontSize: 14,
         },
         {
           id: "text5",
@@ -327,6 +367,7 @@ const defaultTemplates = {
           xPercent: 59,
           yPercent: 67,
           rotation: 45,
+          fontSize: 14,
         },
       ],
     },
@@ -338,6 +379,7 @@ const defaultTemplates = {
           xPercent: 36,
           yPercent: 52,
           rotation: 5,
+          fontSize: 14,
         },
         {
           id: "text2",
@@ -345,6 +387,7 @@ const defaultTemplates = {
           xPercent: 48,
           yPercent: 29,
           rotation: -80,
+          fontSize: 14,
         },
         {
           id: "text3",
@@ -352,6 +395,7 @@ const defaultTemplates = {
           xPercent: 63,
           yPercent: 38,
           rotation: -35,
+          fontSize: 14,
         },
         {
           id: "text4",
@@ -359,6 +403,7 @@ const defaultTemplates = {
           xPercent: 66,
           yPercent: 50,
           rotation: -10,
+          fontSize: 14,
         },
         {
           id: "text5",
@@ -366,6 +411,7 @@ const defaultTemplates = {
           xPercent: 62,
           yPercent: 61,
           rotation: 25,
+          fontSize: 14,
         },
         {
           id: "text6",
@@ -373,6 +419,7 @@ const defaultTemplates = {
           xPercent: 49.5,
           yPercent: 69,
           rotation: 60,
+          fontSize: 14,
         },
       ],
     },
@@ -384,6 +431,7 @@ const defaultTemplates = {
           xPercent: 37,
           yPercent: 52,
           rotation: 5,
+          fontSize: 14,
         },
         {
           id: "text2",
@@ -391,6 +439,7 @@ const defaultTemplates = {
           xPercent: 44,
           yPercent: 30,
           rotation: -90,
+          fontSize: 14,
         },
         {
           id: "text3",
@@ -398,6 +447,7 @@ const defaultTemplates = {
           xPercent: 57,
           yPercent: 31,
           rotation: -70,
+          fontSize: 14,
         },
         {
           id: "text4",
@@ -405,6 +455,7 @@ const defaultTemplates = {
           xPercent: 67,
           yPercent: 42,
           rotation: -30,
+          fontSize: 14,
         },
         {
           id: "text5",
@@ -412,6 +463,7 @@ const defaultTemplates = {
           xPercent: 65,
           yPercent: 56,
           rotation: 25,
+          fontSize: 14,
         },
         {
           id: "text6",
@@ -419,6 +471,7 @@ const defaultTemplates = {
           xPercent: 56,
           yPercent: 66,
           rotation: 50,
+          fontSize: 14,
         },
         {
           id: "text7",
@@ -426,6 +479,7 @@ const defaultTemplates = {
           xPercent: 44,
           yPercent: 70,
           rotation: 86,
+          fontSize: 14,
         },
       ],
     },
