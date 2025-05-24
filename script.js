@@ -487,6 +487,7 @@ const defaultTemplates = {
 };
 
 // Current state
+let originalFieldValues = {};
 let currentCategory = "soccer";
 let currentKids = 1;
 let currentColor = "Black";
@@ -539,6 +540,21 @@ function setupEventListeners() {
   imageContainer.addEventListener("mousedown", handleMouseDown);
   document.addEventListener("mousemove", handleMouseMove);
   document.addEventListener("mouseup", handleMouseUp);
+}
+
+// Function to store original values - call this when template is first created
+function storeOriginalValues() {
+  const template = currentTemplates[currentKids];
+  originalFieldValues[currentKids] = {};
+
+  template.textFields.forEach((field) => {
+    originalFieldValues[currentKids][field.id] = {
+      xPercent: field.xPercent,
+      yPercent: field.yPercent,
+      rotation: field.rotation,
+      fontSize: field.fontSize,
+    };
+  });
 }
 
 function handleCategoryChange(e) {
@@ -608,6 +624,7 @@ function updateTemplate() {
   clearOverlays();
   createTextControls();
   createTextOverlays();
+  storeOriginalValues();
 }
 
 function clearOverlays() {
@@ -758,20 +775,33 @@ function adjustField(fieldId, property, delta) {
 
   if (!field) return;
 
-  // Apply adjustment with bounds checking
+  // Get original values
+  const originalValues = originalFieldValues[currentKids]?.[fieldId];
+  if (!originalValues) return;
+
+  // Apply adjustment
   let newValue = field[property] + delta;
 
-  // Set bounds based on property
+  // Set bounds based on property with limits from original values
   switch (property) {
     case "xPercent":
     case "yPercent":
-      newValue = Math.max(0, Math.min(100, newValue));
+      const originalPos = originalValues[property];
+      const minPos = Math.max(0, originalPos - 15);
+      const maxPos = Math.min(100, originalPos + 15);
+      newValue = Math.max(minPos, Math.min(maxPos, newValue));
       break;
     case "rotation":
-      newValue = Math.max(-180, Math.min(180, newValue));
+      const originalRot = originalValues.rotation;
+      const minRot = originalRot - 50;
+      const maxRot = originalRot + 50;
+      newValue = Math.max(minRot, Math.min(maxRot, newValue));
       break;
     case "fontSize":
-      newValue = Math.max(8, Math.min(72, newValue));
+      const originalSize = originalValues.fontSize;
+      const minSize = Math.max(8, originalSize - 5);
+      const maxSize = Math.min(72, originalSize + 5);
+      newValue = Math.max(minSize, Math.min(maxSize, newValue));
       break;
   }
 
@@ -822,38 +852,6 @@ function updateControlLabels(fieldId) {
   });
 }
 
-function adjustField(fieldId, property, delta) {
-  const template = currentTemplates[currentKids];
-  const field = template.textFields.find((f) => f.id === fieldId);
-
-  if (!field) return;
-
-  // Apply adjustment with bounds checking
-  let newValue = field[property] + delta;
-
-  // Set bounds based on property
-  switch (property) {
-    case "xPercent":
-    case "yPercent":
-      newValue = Math.max(0, Math.min(100, newValue));
-      break;
-    case "rotation":
-      newValue = Math.max(-180, Math.min(180, newValue));
-      break;
-    case "fontSize":
-      newValue = Math.max(8, Math.min(72, newValue));
-      break;
-  }
-
-  field[property] = newValue;
-
-  // Update overlay
-  updateOverlayStyle(fieldId);
-
-  // Update control labels - FIXED: Now properly updates the specific field's labels
-  updateControlLabels(fieldId);
-}
-
 // Mouse event handlers for dragging
 function handleMouseDown(e) {
   const overlay = e.target.closest(".text-overlay");
@@ -885,15 +883,29 @@ function handleMouseMove(e) {
   const x = e.clientX - imageRect.left;
   const y = e.clientY - imageRect.top;
 
-  const xPercent = Math.max(0, Math.min(100, (x / imageRect.width) * 100));
-  const yPercent = Math.max(0, Math.min(100, (y / imageRect.height) * 100));
+  let xPercent = Math.max(0, Math.min(100, (x / imageRect.width) * 100));
+  let yPercent = Math.max(0, Math.min(100, (y / imageRect.height) * 100));
+
+  // Get field ID and original values
+  const fieldId = selectedOverlay.dataset.fieldId.split("-").at(1);
+  const originalValues = originalFieldValues[currentKids]?.[fieldId];
+
+  if (originalValues) {
+    // Apply position bounds (+/-15% from original)
+    const minX = Math.max(0, originalValues.xPercent - 15);
+    const maxX = Math.min(100, originalValues.xPercent + 15);
+    const minY = Math.max(0, originalValues.yPercent - 15);
+    const maxY = Math.min(100, originalValues.yPercent + 15);
+
+    xPercent = Math.max(minX, Math.min(maxX, xPercent));
+    yPercent = Math.max(minY, Math.min(maxY, yPercent));
+  }
 
   // Update overlay position
   selectedOverlay.style.left = `${xPercent}%`;
   selectedOverlay.style.top = `${yPercent}%`;
 
   // Update template data
-  const fieldId = selectedOverlay.dataset.fieldId.split("-").at(1);
   const template = currentTemplates[currentKids];
   const field = template.textFields.find((f) => f.id === fieldId);
 
