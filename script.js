@@ -542,7 +542,6 @@ function setupEventListeners() {
   document.addEventListener("mouseup", handleMouseUp);
 }
 
-// Function to store original values - call this when template is first created
 function storeOriginalValues() {
   const template = currentTemplates[currentKids];
   originalFieldValues[currentKids] = {};
@@ -685,10 +684,10 @@ function createTextControls() {
                 <div class="control-buttons">
                   <button class="control-btn" onclick="adjustField('${
                     field.id
-                  }', 'rotation', -5)">-</button>
+                  }', 'rotation', -1)">-</button>
                   <button class="control-btn" onclick="adjustField('${
                     field.id
-                  }', 'rotation', 5)">+</button>
+                  }', 'rotation', 1)">+</button>
                 </div>
               </div>
               
@@ -931,9 +930,11 @@ function exportTemplate() {
   const exportData = {
     category: currentCategory,
     templates: currentTemplates,
+    color: currentColor,
     metadata: {
       exportDate: new Date().toISOString(),
       version: "1.0",
+      publisher: "10daer",
     },
   };
 
