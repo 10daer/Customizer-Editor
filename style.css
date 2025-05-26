@@ -163,11 +163,17 @@ h1 {
   flex: 1;
 }
 
-.image-wrapper {
+/* .image-wrapper {
   position: relative;
   width: 100%;
   max-width: 500px;
   height: auto;
+} */
+.image-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  aspect-ratio: 2316 / 1134; /* Match printFile PNG aspect ratio */
 }
 
 .base-image {

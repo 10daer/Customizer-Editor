@@ -1,5 +1,279 @@
 // Default templates configuration for both categories
 const defaultTemplates = {
+  printFile: {
+    1: {
+      textFields: [
+        {
+          id: "text1",
+          content: "Grandpa",
+          xPercentLeft: 12,
+          xPercentRight: 65,
+          yPercent: 55,
+          rotation: 5,
+          fontSize: 12,
+        },
+        {
+          id: "text2",
+          content: "Sarah",
+          xPercentLeft: 41,
+          xPercentRight: 94,
+          yPercent: 53,
+          rotation: 5,
+          fontSize: 11,
+        },
+      ],
+    },
+    2: {
+      textFields: [
+        {
+          id: "text1",
+          content: "Grandpa",
+          xPercentLeft: 12,
+          xPercentRight: 65,
+          yPercent: 55,
+          rotation: 5,
+          fontSize: 12,
+        },
+        {
+          id: "text2",
+          content: "Sarah",
+          xPercentLeft: 37,
+          xPercentRight: 90,
+          yPercent: 39,
+          rotation: -15,
+          fontSize: 11,
+        },
+        {
+          id: "text3",
+          content: "Lucas",
+          xPercentLeft: 37,
+          xPercentRight: 90,
+          yPercent: 64,
+          rotation: 10,
+          fontSize: 11,
+        },
+      ],
+    },
+    3: {
+      textFields: [
+        {
+          id: "text1",
+          content: "Grandpa",
+          xPercentLeft: 12,
+          xPercentRight: 65,
+          yPercent: 55,
+          rotation: 5,
+          fontSize: 12,
+        },
+        {
+          id: "text2",
+          content: "Sarah",
+          xPercentLeft: 37,
+          xPercentRight: 90,
+          yPercent: 29,
+          rotation: -17,
+          fontSize: 10,
+        },
+        {
+          id: "text3",
+          content: "Lucas",
+          xPercentLeft: 40,
+          xPercentRight: 93,
+          yPercent: 53,
+          rotation: 0,
+          fontSize: 10,
+        },
+        {
+          id: "text4",
+          content: "Kelvin",
+
+          xPercentLeft: 36,
+          xPercentRight: 89,
+          yPercent: 80,
+          rotation: 27,
+          fontSize: 10,
+        },
+      ],
+    },
+    4: {
+      textFields: [
+        {
+          id: "text1",
+          content: "Grandpa",
+          xPercentLeft: 12,
+          xPercentRight: 65,
+          yPercent: 52,
+          rotation: 5,
+          fontSize: 12,
+        },
+        {
+          id: "text2",
+          content: "Sarah",
+          xPercentLeft: 31,
+          xPercentRight: 84,
+          yPercent: 14,
+          rotation: -45,
+          fontSize: 10,
+        },
+        {
+          id: "text3",
+          content: "Lucas",
+          xPercentLeft: 39,
+          xPercentRight: 92,
+          yPercent: 38,
+          rotation: -15,
+          fontSize: 10,
+        },
+        {
+          id: "text4",
+          content: "Kelvin",
+
+          xPercentLeft: 39,
+          xPercentRight: 92,
+          yPercent: 59,
+          rotation: 5,
+          fontSize: 10,
+        },
+        {
+          id: "text5",
+          content: "Emma",
+          xPercentLeft: 32,
+          xPercentRight: 85,
+          yPercent: 83,
+          rotation: 45,
+          fontSize: 10,
+        },
+      ],
+    },
+    5: {
+      textFields: [
+        {
+          id: "text1",
+          content: "Grandpa",
+          xPercentLeft: 12,
+          xPercentRight: 65,
+          yPercent: 52,
+          rotation: 5,
+          fontSize: 12,
+        },
+        {
+          id: "text2",
+          content: "Sarah",
+          xPercentLeft: 23.5,
+          xPercentRight: 76.5,
+          yPercent: 10,
+          rotation: -80,
+          fontSize: 9,
+        },
+        {
+          id: "text3",
+          content: "Lucas",
+          xPercentLeft: 34,
+          xPercentRight: 87,
+          yPercent: 27,
+          rotation: -34,
+          fontSize: 9,
+        },
+        {
+          id: "text4",
+          content: "Kelvin",
+
+          xPercentLeft: 36,
+          xPercentRight: 89,
+          yPercent: 51,
+          rotation: 0,
+          fontSize: 9,
+        },
+        {
+          id: "text5",
+          content: "Emma",
+          xPercentLeft: 33,
+          xPercentRight: 86,
+          yPercent: 71,
+          rotation: 24,
+          fontSize: 9,
+        },
+        {
+          id: "text6",
+          content: "Lily",
+          xPercentLeft: 24.5,
+          xPercentRight: 77.5,
+          yPercent: 86,
+          rotation: 70,
+          fontSize: 9,
+        },
+      ],
+    },
+    6: {
+      textFields: [
+        {
+          id: "text1",
+          content: "Grandpa",
+          xPercentLeft: 12,
+          xPercentRight: 65,
+          yPercent: 53,
+          rotation: 5,
+          fontSize: 12,
+        },
+        {
+          id: "text2",
+          content: "Sarah",
+          xPercentLeft: 20,
+          xPercentRight: 73,
+          yPercent: 11,
+          rotation: -90,
+          fontSize: 9,
+        },
+        {
+          id: "text3",
+          content: "Lucas",
+          xPercentLeft: 30,
+          xPercentRight: 83,
+          yPercent: 12,
+          rotation: -60,
+          fontSize: 9,
+        },
+        {
+          id: "text4",
+          content: "Kelvin",
+
+          xPercentLeft: 38,
+          xPercentRight: 91,
+          yPercent: 34,
+          rotation: -24,
+          fontSize: 9,
+        },
+        {
+          id: "text5",
+          content: "Emma",
+          xPercentLeft: 36,
+          xPercentRight: 89,
+          yPercent: 61,
+          rotation: 20,
+          fontSize: 9,
+        },
+        {
+          id: "text6",
+          content: "Lily",
+          xPercentLeft: 29,
+          xPercentRight: 82,
+          yPercent: 81,
+          rotation: 58,
+          fontSize: 9,
+        },
+        {
+          id: "text7",
+          content: "Jake",
+
+          xPercentLeft: 19.5,
+          xPercentRight: 72.5,
+          yPercent: 88,
+          rotation: 95,
+          fontSize: 9,
+        },
+      ],
+    },
+  },
   tools: {
     2: {
       textFields: [
@@ -548,6 +822,10 @@ function storeOriginalValues() {
       yPercent: field.yPercent,
       rotation: field.rotation,
       fontSize: field.fontSize,
+      ...(currentCategory === "printFile" && {
+        xPercentLeft: field.xPercentLeft,
+        xPercentRight: field.xPercentRight,
+      }),
     };
   });
 }
@@ -598,9 +876,14 @@ function updateImageSource() {
   skeleton.style.display = "block";
 
   // Construct new image URL
-  const imageUrl = `${currentCategory}/${currentColor} Mug/${currentKids} Kid${
-    currentKids > 1 ? "s" : ""
-  } ${currentColor} Mug.jpeg`;
+  let imageUrl;
+  if (currentCategory === "printFile") {
+    imageUrl = `printFile/${currentKids}.png`; // Single PNG for printFile
+  } else {
+    imageUrl = `${currentCategory}/${currentColor} Mug/${currentKids} Kid${
+      currentKids > 1 ? "s" : ""
+    } ${currentColor} Mug.jpeg`;
+  }
 
   // Set image source
   baseImage.src = imageUrl;
@@ -640,66 +923,78 @@ function createTextControls() {
     controlGroup.className = "text-input-group";
     controlGroup.dataset.fieldId = field.id;
 
+    const xControl =
+      currentCategory === "printFile"
+        ? `
+        <div class="control-row">
+          <span class="control-label">X Left: ${field.xPercentLeft}%</span>
+          <div class="control-buttons">
+            <button class="control-btn" onclick="adjustField('${field.id}', 'xPercentLeft', -0.5)">-</button>
+            <button class="control-btn" onclick="adjustField('${field.id}', 'xPercentLeft', 0.5)">+</button>
+          </div>
+        </div>
+        <div class="control-row">
+          <span class="control-label">X Right: ${field.xPercentRight}%</span>
+          <div class="control-buttons">
+            <button class="control-btn" onclick="adjustField('${field.id}', 'xPercentRight', -0.5)">-</button>
+            <button class="control-btn" onclick="adjustField('${field.id}', 'xPercentRight', 0.5)">+</button>
+          </div>
+        </div>
+      `
+        : `
+        <div class="control-row">
+          <span class="control-label">X: ${field.xPercent}%</span>
+          <div class="control-buttons">
+            <button class="control-btn" onclick="adjustField('${field.id}', 'xPercent', -0.5)">-</button>
+            <button class="control-btn" onclick="adjustField('${field.id}', 'xPercent', 0.5)">+</button>
+          </div>
+        </div>
+      `;
+
     controlGroup.innerHTML = `
-            <div class="form-group">
-              <label>${
-                field.id === "text1" ? "Dad/Mom" : `Child ${index}`
-              }</label>
-              <input type="text" value="${
-                field.content
-              }" onchange="updateFieldContent('${field.id}', this.value)">
-            </div>
-            
-            <div class="control-group">
-              <div class="control-row">
-                <span class="control-label">X: ${field.xPercent}%</span>
-                <div class="control-buttons">
-                  <button class="control-btn" onclick="adjustField('${
-                    field.id
-                  }', 'xPercent', -0.5)">-</button>
-                  <button class="control-btn" onclick="adjustField('${
-                    field.id
-                  }', 'xPercent', 0.5)">+</button>
-                </div>
-              </div>
-              
-              <div class="control-row">
-                <span class="control-label">Y: ${field.yPercent}%</span>
-                <div class="control-buttons">
-                  <button class="control-btn" onclick="adjustField('${
-                    field.id
-                  }', 'yPercent', -0.5)">-</button>
-                  <button class="control-btn" onclick="adjustField('${
-                    field.id
-                  }', 'yPercent', 0.5)">+</button>
-                </div>
-              </div>
-              
-              <div class="control-row">
-                <span class="control-label">Rotation: ${field.rotation}°</span>
-                <div class="control-buttons">
-                  <button class="control-btn" onclick="adjustField('${
-                    field.id
-                  }', 'rotation', -1)">-</button>
-                  <button class="control-btn" onclick="adjustField('${
-                    field.id
-                  }', 'rotation', 1)">+</button>
-                </div>
-              </div>
-              
-              <div class="control-row">
-                <span class="control-label">Size: ${field.fontSize}px</span>
-                <div class="control-buttons">
-                  <button class="control-btn" onclick="adjustField('${
-                    field.id
-                  }', 'fontSize', -1)">-</button>
-                  <button class="control-btn" onclick="adjustField('${
-                    field.id
-                  }', 'fontSize', 1)">+</button>
-                </div>
-              </div>
-            </div>
-          `;
+      <div class="form-group">
+        <label>${field.id === "text1" ? "Dad/Mom" : `Child ${index}`}</label>
+        <input type="text" value="${
+          field.content || ""
+        }" onchange="updateFieldContent('${field.id}', this.value)">
+      </div>
+      <div class="control-group">
+        ${xControl}
+        <div class="control-row">
+          <span class="control-label">Y: ${field.yPercent}%</span>
+          <div class="control-buttons">
+            <button class="control-btn" onclick="adjustField('${
+              field.id
+            }', 'yPercent', -0.5)">-</button>
+            <button class="control-btn" onclick="adjustField('${
+              field.id
+            }', 'yPercent', 0.5)">+</button>
+          </div>
+        </div>
+        <div class="control-row">
+          <span class="control-label">Rotation: ${field.rotation}°</span>
+          <div class="control-buttons">
+            <button class="control-btn" onclick="adjustField('${
+              field.id
+            }', 'rotation', -1)">-</button>
+            <button class="control-btn" onclick="adjustField('${
+              field.id
+            }', 'rotation', 1)">+</button>
+          </div>
+        </div>
+        <div class="control-row">
+          <span class="control-label">Size: ${field.fontSize}px</span>
+          <div class="control-buttons">
+            <button class="control-btn" onclick="adjustField('${
+              field.id
+            }', 'fontSize', -1)">-</button>
+            <button class="control-btn" onclick="adjustField('${
+              field.id
+            }', 'fontSize', 1)">+</button>
+          </div>
+        </div>
+      </div>
+    `;
 
     textControlsContainer.appendChild(controlGroup);
   });
@@ -710,19 +1005,37 @@ function createTextOverlays() {
   const imageWrapper = document.querySelector(".image-wrapper");
 
   template.textFields.forEach((field) => {
-    const overlay = createOverlay(field);
-    imageWrapper.appendChild(overlay);
-    textOverlays[field.id] = overlay;
+    if (currentCategory === "printFile") {
+      // Create two overlays for printFile: one for xPercentLeft, one for xPercentRight
+      const leftOverlay = createOverlay(field, true);
+      const rightOverlay = createOverlay(field, false);
+      imageWrapper.appendChild(leftOverlay);
+      imageWrapper.appendChild(rightOverlay);
+      textOverlays[`${field.id}-left`] = leftOverlay;
+      textOverlays[`${field.id}-right`] = rightOverlay;
+    } else {
+      // Single overlay for other categories
+      const overlay = createOverlay(field);
+      imageWrapper.appendChild(overlay);
+      textOverlays[field.id] = overlay;
+    }
   });
 }
 
-function createOverlay(field) {
+function createOverlay(field, isLeft) {
   const overlay = document.createElement("div");
   overlay.className = "text-overlay";
-  overlay.dataset.fieldId = `overlay-${field.id}`;
-  overlay.textContent = field.content;
+  overlay.dataset.fieldId = `overlay-${field.id}${
+    currentCategory === "printFile" ? (isLeft ? "-left" : "-right") : ""
+  }`;
+  overlay.textContent = field.content || "";
 
-  overlay.style.left = `${field.xPercent}%`;
+  overlay.style.left =
+    currentCategory === "printFile"
+      ? isLeft
+        ? `${field.xPercentLeft}%`
+        : `${field.xPercentRight}%`
+      : `${field.xPercent}%`;
   overlay.style.top = `${field.yPercent}%`;
   overlay.style.transform = `translate(-50%, -50%) rotate(${field.rotation}deg)`;
   overlay.style.fontSize = `${field.fontSize}px`;
@@ -741,15 +1054,29 @@ function selectOverlay(overlay) {
     g.classList.remove("active");
   });
 
-  // Select new overlay
-  overlay.classList.add("selected");
-  selectedOverlay = overlay;
+  // Select new overlay only if overlay is not null
+  if (overlay) {
+    const fieldId = overlay.dataset.fieldId.split("-")[1]; // Get base fieldId (e.g., text1)
+    if (currentCategory === "printFile") {
+      // Select both left and right overlays for the same field
+      const leftOverlay = textOverlays[`${fieldId}-left`];
+      const rightOverlay = textOverlays[`${fieldId}-right`];
+      if (leftOverlay) leftOverlay.classList.add("selected");
+      if (rightOverlay) rightOverlay.classList.add("selected");
+    } else {
+      overlay.classList.add("selected");
+    }
+    selectedOverlay = overlay;
 
-  // Highlight corresponding control group
-  const fieldId = overlay.dataset.fieldId;
-  const controlGroup = document.querySelector(`[data-field-id="${fieldId}"]`);
-  if (controlGroup) {
-    controlGroup.classList.add("active");
+    // Highlight corresponding control group
+    const controlGroup = document.querySelector(
+      `[data-field-id="overlay-${fieldId}"]`
+    );
+    if (controlGroup) {
+      controlGroup.classList.add("active");
+    }
+  } else {
+    selectedOverlay = null;
   }
 }
 
@@ -759,8 +1086,15 @@ function updateFieldContent(fieldId, newContent) {
   if (field) {
     field.content = newContent;
 
-    const overlay = textOverlays[fieldId];
-    if (overlay) overlay.textContent = newContent;
+    if (currentCategory === "printFile") {
+      const leftOverlay = textOverlays[`${fieldId}-left`];
+      const rightOverlay = textOverlays[`${fieldId}-right`];
+      if (leftOverlay) leftOverlay.textContent = newContent;
+      if (rightOverlay) rightOverlay.textContent = newContent;
+    } else {
+      const overlay = textOverlays[fieldId];
+      if (overlay) overlay.textContent = newContent;
+    }
   }
 }
 
@@ -780,11 +1114,23 @@ function adjustField(fieldId, property, delta) {
   // Set bounds based on property with limits from original values
   switch (property) {
     case "xPercent":
-    case "yPercent":
-      const originalPos = originalValues[property];
+      const originalPos = originalValues.xPercent;
       const minPos = Math.max(0, originalPos - 15);
       const maxPos = Math.min(100, originalPos + 15);
       newValue = Math.max(minPos, Math.min(maxPos, newValue));
+      break;
+    case "xPercentLeft":
+    case "xPercentRight":
+      const originalX = originalValues[property];
+      const minX = Math.max(0, originalX - 15);
+      const maxX = Math.min(100, originalX + 15);
+      newValue = Math.max(minX, Math.min(maxX, newValue));
+      break;
+    case "yPercent":
+      const originalY = originalValues.yPercent;
+      const minY = Math.max(0, originalY - 15);
+      const maxY = Math.min(100, originalY + 15);
+      newValue = Math.max(minY, Math.min(maxY, newValue));
       break;
     case "rotation":
       const originalRot = originalValues.rotation;
@@ -815,13 +1161,29 @@ function updateOverlayStyle(fieldId) {
 
   if (!field) return;
 
-  const overlay = textOverlays[fieldId];
-
-  if (overlay) {
-    overlay.style.left = `${field.xPercent}%`;
-    overlay.style.top = `${field.yPercent}%`;
-    overlay.style.transform = `translate(-50%, -50%) rotate(${field.rotation}deg)`;
-    overlay.style.fontSize = `${field.fontSize}px`;
+  if (currentCategory === "printFile") {
+    const leftOverlay = textOverlays[`${fieldId}-left`];
+    const rightOverlay = textOverlays[`${fieldId}-right`];
+    if (leftOverlay) {
+      leftOverlay.style.left = `${field.xPercentLeft}%`;
+      leftOverlay.style.top = `${field.yPercent}%`;
+      leftOverlay.style.transform = `translate(-50%, -50%) rotate(${field.rotation}deg)`;
+      leftOverlay.style.fontSize = `${field.fontSize}px`;
+    }
+    if (rightOverlay) {
+      rightOverlay.style.left = `${field.xPercentRight}%`;
+      rightOverlay.style.top = `${field.yPercent}%`;
+      rightOverlay.style.transform = `translate(-50%, -50%) rotate(${field.rotation}deg)`;
+      rightOverlay.style.fontSize = `${field.fontSize}px`;
+    }
+  } else {
+    const overlay = textOverlays[fieldId];
+    if (overlay) {
+      overlay.style.left = `${field.xPercent}%`;
+      overlay.style.top = `${field.yPercent}%`;
+      overlay.style.transform = `translate(-50%, -50%) rotate(${field.rotation}deg)`;
+      overlay.style.fontSize = `${field.fontSize}px`;
+    }
   }
 }
 
@@ -839,10 +1201,18 @@ function updateControlLabels(fieldId) {
     const labels = controlGroup.querySelectorAll(".control-label");
 
     if (labels.length >= 4) {
-      labels[0].textContent = `X: ${field.xPercent}%`;
-      labels[1].textContent = `Y: ${field.yPercent}%`;
-      labels[2].textContent = `Rotation: ${field.rotation}°`;
-      labels[3].textContent = `Size: ${field.fontSize}px`;
+      if (currentCategory === "printFile") {
+        labels[0].textContent = `X Left: ${field.xPercentLeft}%`;
+        labels[1].textContent = `X Right: ${field.xPercentRight}%`;
+        labels[2].textContent = `Y: ${field.yPercent}%`;
+        labels[3].textContent = `Rotation: ${field.rotation}°`;
+        labels[4].textContent = `Size: ${field.fontSize}px`;
+      } else {
+        labels[0].textContent = `X: ${field.xPercent}%`;
+        labels[1].textContent = `Y: ${field.yPercent}%`;
+        labels[2].textContent = `Rotation: ${field.rotation}°`;
+        labels[3].textContent = `Size: ${field.fontSize}px`;
+      }
     }
   });
 }
@@ -882,38 +1252,79 @@ function handleMouseMove(e) {
   let yPercent = Math.max(0, Math.min(100, (y / imageRect.height) * 100));
 
   // Get field ID and original values
-  const fieldId = selectedOverlay.dataset.fieldId.split("-").at(1);
+  const fieldId = selectedOverlay.dataset.fieldId.split("-")[1];
   const originalValues = originalFieldValues[currentKids]?.[fieldId];
 
   if (originalValues) {
-    // Apply position bounds (+/-15% from original)
-    const minX = Math.max(0, originalValues.xPercent - 15);
-    const maxX = Math.min(100, originalValues.xPercent + 15);
-    const minY = Math.max(0, originalValues.yPercent - 15);
-    const maxY = Math.min(100, originalValues.yPercent + 15);
+    if (currentCategory === "printFile") {
+      // Apply position bounds (+/-15% from original for xPercentLeft)
+      const minXLeft = Math.max(0, originalValues.xPercentLeft - 15);
+      const maxXLeft = Math.min(100, originalValues.xPercentLeft + 15);
+      const minY = Math.max(0, originalValues.yPercent - 15);
+      const maxY = Math.min(100, originalValues.yPercent + 15);
 
-    xPercent = Math.max(minX, Math.min(maxX, xPercent));
-    yPercent = Math.max(minY, Math.min(maxY, yPercent));
+      xPercent = Math.max(minXLeft, Math.min(maxXLeft, xPercent));
+      yPercent = Math.max(minY, Math.min(maxY, yPercent));
+    } else {
+      // Apply position bounds (+/-15% from original)
+      const minX = Math.max(0, originalValues.xPercent - 15);
+      const maxX = Math.min(100, originalValues.xPercent + 15);
+      const minY = Math.max(0, originalValues.yPercent - 15);
+      const maxY = Math.min(100, originalValues.yPercent + 15);
+
+      xPercent = Math.max(minX, Math.min(maxX, xPercent));
+      yPercent = Math.max(minY, Math.min(maxY, yPercent));
+    }
   }
 
   // Update overlay position
-  selectedOverlay.style.left = `${xPercent}%`;
-  selectedOverlay.style.top = `${yPercent}%`;
+  if (currentCategory === "printFile") {
+    const isLeftOverlay = selectedOverlay.dataset.fieldId.includes("-left");
+    const leftOverlay = textOverlays[`${fieldId}-left`];
+    const rightOverlay = textOverlays[`${fieldId}-right`];
+    if (leftOverlay) {
+      leftOverlay.style.left = isLeftOverlay
+        ? `${xPercent}%`
+        : `${field.xPercentLeft}%`;
+      leftOverlay.style.top = `${yPercent}%`;
+    }
+    if (rightOverlay) {
+      rightOverlay.style.left = isLeftOverlay
+        ? `${field.xPercentRight}%`
+        : `${xPercent}%`;
+      rightOverlay.style.top = `${yPercent}%`;
+    }
+  } else {
+    selectedOverlay.style.left = `${xPercent}%`;
+    selectedOverlay.style.top = `${yPercent}%`;
+  }
 
   // Update template data
   const template = currentTemplates[currentKids];
   const field = template.textFields.find((f) => f.id === fieldId);
 
   if (field) {
-    field.xPercent = Math.round(xPercent);
-    field.yPercent = Math.round(yPercent);
+    if (currentCategory === "printFile") {
+      const deltaX = field.xPercentRight - field.xPercentLeft;
+      if (selectedOverlay.dataset.fieldId.includes("-left")) {
+        field.xPercentLeft = Math.round(xPercent);
+        field.xPercentRight = Math.round(xPercent + deltaX);
+      } else {
+        field.xPercentRight = Math.round(xPercent);
+        field.xPercentLeft = Math.round(xPercent - deltaX);
+      }
+      field.yPercent = Math.round(yPercent);
+    } else {
+      field.xPercent = Math.round(xPercent);
+      field.yPercent = Math.round(yPercent);
+    }
   }
 }
 
 function handleMouseUp(e) {
   if (isDragging && selectedOverlay) {
     selectedOverlay.classList.remove("dragging");
-    const fieldId = selectedOverlay.dataset.fieldId.split("-")?.at(1);
+    const fieldId = selectedOverlay.dataset.fieldId.split("-")[1];
     updateControlLabels(fieldId);
   }
 
