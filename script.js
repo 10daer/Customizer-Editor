@@ -829,6 +829,7 @@ function storeOriginalValues() {
 
 function handleCategoryChange(e) {
   // Update selected style
+  const colorVariant = document.querySelector(".color-variants");
   document.querySelectorAll(".category-variant").forEach((variant) => {
     variant.classList.remove("selected");
   });
@@ -838,6 +839,11 @@ function handleCategoryChange(e) {
   currentTemplates = JSON.parse(
     JSON.stringify(defaultTemplates[currentCategory])
   );
+  if (currentCategory === "printFile") {
+    colorVariant.style.display = "none";
+  } else {
+    colorVariant.style.display = "flex";
+  }
   updateImageSource();
   updateTemplate();
 }
