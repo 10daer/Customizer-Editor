@@ -505,8 +505,6 @@ const skeleton = document.getElementById("imageSkeleton");
 const imageContainer = document.getElementById("imageContainer");
 const textControlsContainer = document.getElementById("text-controls");
 const exportBtn = document.getElementById("exportBtn");
-const importBtn = document.getElementById("importBtn");
-const importFile = document.getElementById("importFile");
 
 // Initialize the application
 function init() {
@@ -531,10 +529,8 @@ function setupEventListeners() {
     variant.addEventListener("click", handleColorChange);
   });
 
-  // Export/Import
+  // Export
   exportBtn.addEventListener("click", exportTemplate);
-  importBtn.addEventListener("click", () => importFile.click());
-  importFile.addEventListener("change", importTemplate);
 
   // Image container mouse events for dragging
   imageContainer.addEventListener("mousedown", handleMouseDown);
@@ -947,50 +943,6 @@ function exportTemplate() {
   link.click();
 
   URL.revokeObjectURL(link.href);
-}
-
-function importTemplate(e) {
-  const file = e.target.files[0];
-  if (!file) return;
-
-  const reader = new FileReader();
-  reader.onload = function (event) {
-    try {
-      const importedData = JSON.parse(event.target.result);
-
-      // Validate imported data structure
-      if (
-        importedData.templates &&
-        typeof importedData.templates === "object"
-      ) {
-        currentTemplates = importedData.templates;
-        if (importedData.category) {
-          currentCategory = importedData.category;
-
-          // Update category selector
-          document.querySelectorAll(".category-variant").forEach((variant) => {
-            variant.classList.remove("selected");
-            if (variant.dataset.category === currentCategory) {
-              variant.classList.add("selected");
-            }
-          });
-        }
-
-        updateImageSource();
-        updateTemplate();
-        alert("Template imported successfully!");
-      } else {
-        alert("Invalid template file format.");
-      }
-    } catch (error) {
-      alert("Error reading template file: " + error.message);
-    }
-  };
-
-  reader.readAsText(file);
-
-  // Reset file input
-  e.target.value = "";
 }
 
 // Make functions globally available
