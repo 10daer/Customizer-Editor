@@ -1348,7 +1348,7 @@ function exportTemplate() {
   const exportData = {
     category: currentCategory,
     templates: currentTemplates,
-    color: currentColor,
+    color: currentCategory !== "printFile" ? currentColor : null,
     metadata: {
       exportDate: new Date().toISOString(),
       version: "1.0",
@@ -1361,7 +1361,10 @@ function exportTemplate() {
 
   const link = document.createElement("a");
   link.href = URL.createObjectURL(dataBlob);
-  link.download = `${currentCategory}-${currentColor}-template-config-${Date.now()}.json`;
+  link.download =
+    currentCategory !== "printFile"
+      ? `${currentCategory}-${currentColor}-template-config-${Date.now()}.json`
+      : `${currentCategory}-template-config-${Date.now()}.json`;
   link.click();
 
   URL.revokeObjectURL(link.href);
