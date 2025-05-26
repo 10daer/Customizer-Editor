@@ -1229,6 +1229,9 @@ function handleMouseDown(e) {
   overlay.classList.add("dragging");
   selectOverlay(overlay);
 
+  if (currentCategory === "printFile") {
+  }
+
   const rect = imageContainer.getBoundingClientRect();
   dragStartPos = {
     x: e.clientX - rect.left,
@@ -1254,16 +1257,24 @@ function handleMouseMove(e) {
   // Get field ID and original values
   const fieldId = selectedOverlay.dataset.fieldId.split("-")[1];
   const originalValues = originalFieldValues[currentKids]?.[fieldId];
+  const template = currentTemplates[currentKids];
+  const field = template.textFields.find((f) => f.id === fieldId);
 
   if (originalValues) {
     if (currentCategory === "printFile") {
-      // Apply position bounds (+/-15% from original for xPercentLeft)
+      // Apply position bounds (+/-15% from original for xPercentLeft and xPercentRight)
       const minXLeft = Math.max(0, originalValues.xPercentLeft - 15);
       const maxXLeft = Math.min(100, originalValues.xPercentLeft + 15);
+      const minXRight = Math.max(0, originalValues.xPercentRight - 15);
+      const maxXRight = Math.min(100, originalValues.xPercentRight + 15);
       const minY = Math.max(0, originalValues.yPercent - 15);
       const maxY = Math.min(100, originalValues.yPercent + 15);
 
-      xPercent = Math.max(minXLeft, Math.min(maxXLeft, xPercent));
+      if (selectedOverlay.dataset.fieldId.includes("-left")) {
+        xPercent = Math.max(minXLeft, Math.min(maxXLeft, xPercent));
+      } else {
+        xPercent = Math.max(minXRight, Math.min(maxXRight, xPercent));
+      }
       yPercent = Math.max(minY, Math.min(maxY, yPercent));
     } else {
       // Apply position bounds (+/-15% from original)
@@ -1282,6 +1293,8 @@ function handleMouseMove(e) {
     const isLeftOverlay = selectedOverlay.dataset.fieldId.includes("-left");
     const leftOverlay = textOverlays[`${fieldId}-left`];
     const rightOverlay = textOverlays[`${fieldId}-right`];
+    const deltaX = field.xPercentRight - field.xPercentLeft;
+
     if (leftOverlay) {
       leftOverlay.style.left = isLeftOverlay
         ? `${xPercent}%`
@@ -1290,7 +1303,7 @@ function handleMouseMove(e) {
     }
     if (rightOverlay) {
       rightOverlay.style.left = isLeftOverlay
-        ? `${field.xPercentRight}%`
+        ? `${xPercent + deltaX}%`
         : `${xPercent}%`;
       rightOverlay.style.top = `${yPercent}%`;
     }
@@ -1300,9 +1313,6 @@ function handleMouseMove(e) {
   }
 
   // Update template data
-  const template = currentTemplates[currentKids];
-  const field = template.textFields.find((f) => f.id === fieldId);
-
   if (field) {
     if (currentCategory === "printFile") {
       const deltaX = field.xPercentRight - field.xPercentLeft;
