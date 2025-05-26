@@ -248,16 +248,500 @@ const defaultTemplates = {
         {
           id: "text1",
           content: "Grandpa",
-          xPercent: 41,
-          yPercent: 52,
-          rotation: 2,
+          xPercent: 42,
+          yPercent: 54,
+          rotation: 1,
           fontSize: 16,
         },
         {
           id: "text2",
           content: "Sarah",
           xPercent: 70,
+          yPercent: 51,
+          rotation: -5,
+          fontSize: 12,
+        },
+      ],
+    },
+    2: {
+      textFields: [
+        {
+          id: "text1",
+          content: "Grandpa",
+          xPercent: 43,
+          yPercent: 51,
+          rotation: 1,
+          fontSize: 16,
+        },
+        {
+          id: "text2",
+          content: "Sarah",
+          xPercent: 69,
+          yPercent: 45,
+          rotation: -11,
+          fontSize: 12,
+        },
+        {
+          id: "text3",
+          content: "Kelvin",
+          xPercent: 69,
+          yPercent: 55,
+          rotation: 9,
+          fontSize: 12,
+        },
+      ],
+    },
+    3: {
+      textFields: [
+        {
+          id: "text1",
+          content: "Grandpa",
+          xPercent: 43,
+          yPercent: 53,
+          rotation: 1,
+          fontSize: 16,
+        },
+        {
+          id: "text2",
+          content: "Sarah",
+          xPercent: 66,
+          yPercent: 40,
+          rotation: -29,
+          fontSize: 12,
+        },
+        {
+          id: "text3",
+          content: "Kelvin",
+          xPercent: 70,
           yPercent: 50,
+          rotation: -2,
+          fontSize: 12,
+        },
+        {
+          id: "text4",
+          content: "Emma",
+          xPercent: 66,
+          yPercent: 62,
+          rotation: 31,
+          fontSize: 12,
+        },
+      ],
+    },
+    4: {
+      textFields: [
+        {
+          id: "text1",
+          content: "Grandpa",
+          xPercent: 43,
+          yPercent: 53,
+          rotation: 2,
+          fontSize: 16,
+        },
+        {
+          id: "text2",
+          content: "Sarah",
+          xPercent: 61,
+          yPercent: 37,
+          rotation: -50,
+          fontSize: 12,
+        },
+        {
+          id: "text3",
+          content: "Kelvin",
+          xPercent: 70,
+          yPercent: 46,
+          rotation: -15,
+          fontSize: 12,
+        },
+        {
+          id: "text4",
+          content: "Emma",
+          xPercent: 69,
+          yPercent: 56,
+          rotation: 11,
+          fontSize: 12,
+        },
+        {
+          id: "text5",
+          content: "Jake",
+          xPercent: 62,
+          yPercent: 66,
+          rotation: 48,
+          fontSize: 12,
+        },
+      ],
+    },
+    5: {
+      textFields: [
+        {
+          id: "text1",
+          content: "Grandpa",
+          xPercent: 43,
+          yPercent: 53,
+          rotation: 1,
+          fontSize: 16,
+        },
+        {
+          id: "text2",
+          content: "Sarah",
+          xPercent: 57,
+          yPercent: 34,
+          rotation: -75,
+          fontSize: 12,
+        },
+        {
+          id: "text3",
+          content: "Kelvin",
+          xPercent: 67,
+          yPercent: 40,
+          rotation: -39,
+          fontSize: 12,
+        },
+        {
+          id: "text4",
+          content: "Emma",
+          xPercent: 69,
+          yPercent: 51,
+          rotation: 3,
+          fontSize: 12,
+        },
+        {
+          id: "text5",
+          content: "Jake",
+          xPercent: 65,
+          yPercent: 61,
+          rotation: 43,
+          fontSize: 12,
+        },
+        {
+          id: "text6",
+          content: "Lily",
+          xPercent: 56,
+          yPercent: 67,
+          rotation: 72,
+          fontSize: 12,
+        },
+      ],
+    },
+    6: {
+      textFields: [
+        {
+          id: "text1",
+          content: "Grandpa",
+          xPercent: 43,
+          yPercent: 52,
+          rotation: 1,
+          fontSize: 16,
+        },
+        {
+          id: "text2",
+          content: "Sarah",
+          xPercent: 52,
+          yPercent: 34,
+          rotation: -89,
+          fontSize: 12,
+        },
+        {
+          id: "text3",
+          content: "Kelvin",
+          xPercent: 63,
+          yPercent: 36,
+          rotation: -57,
+          fontSize: 12,
+        },
+        {
+          id: "text4",
+          content: "Emma",
+          xPercent: 69,
+          yPercent: 46,
+          rotation: -19,
+          fontSize: 11,
+        },
+        {
+          id: "text5",
+          content: "Jake",
+          xPercent: 68,
+          yPercent: 55,
+          rotation: 8,
+          fontSize: 12,
+        },
+        {
+          id: "text6",
+          content: "Lily",
+          xPercent: 62,
+          yPercent: 64,
+          rotation: 45,
+          fontSize: 12,
+        },
+        {
+          id: "text7",
+          content: "Noah",
+          xPercent: 52,
+          yPercent: 68,
+          rotation: 89,
+          fontSize: 12,
+        },
+      ],
+    },
+  },
+  toolsBlack: {
+    1: {
+      textFields: [
+        {
+          id: "text1",
+          content: "Grandpa",
+          xPercent: 41,
+          yPercent: 53,
+          rotation: 1,
+          fontSize: 16,
+        },
+        {
+          id: "text2",
+          content: "Sarah",
+          xPercent: 69,
+          yPercent: 51,
+          rotation: -5,
+          fontSize: 12,
+        },
+      ],
+    },
+    2: {
+      textFields: [
+        {
+          id: "text1",
+          content: "Grandpa",
+          xPercent: 41,
+          yPercent: 51,
+          rotation: 1,
+          fontSize: 16,
+        },
+        {
+          id: "text2",
+          content: "Sarah",
+          xPercent: 68,
+          yPercent: 45,
+          rotation: -11,
+          fontSize: 12,
+        },
+        {
+          id: "text3",
+          content: "Kelvin",
+          xPercent: 68,
+          yPercent: 55,
+          rotation: 9,
+          fontSize: 12,
+        },
+      ],
+    },
+    3: {
+      textFields: [
+        {
+          id: "text1",
+          content: "Grandpa",
+          xPercent: 41,
+          yPercent: 53,
+          rotation: 1,
+          fontSize: 16,
+        },
+        {
+          id: "text2",
+          content: "Sarah",
+          xPercent: 65,
+          yPercent: 40,
+          rotation: -29,
+          fontSize: 12,
+        },
+        {
+          id: "text3",
+          content: "Kelvin",
+          xPercent: 69,
+          yPercent: 50,
+          rotation: -2,
+          fontSize: 12,
+        },
+        {
+          id: "text4",
+          content: "Emma",
+          xPercent: 65,
+          yPercent: 62,
+          rotation: 31,
+          fontSize: 12,
+        },
+      ],
+    },
+    4: {
+      textFields: [
+        {
+          id: "text1",
+          content: "Grandpa",
+          xPercent: 41,
+          yPercent: 53,
+          rotation: 2,
+          fontSize: 16,
+        },
+        {
+          id: "text2",
+          content: "Sarah",
+          xPercent: 60,
+          yPercent: 36,
+          rotation: -50,
+          fontSize: 12,
+        },
+        {
+          id: "text3",
+          content: "Kelvin",
+          xPercent: 68,
+          yPercent: 45,
+          rotation: -15,
+          fontSize: 12,
+        },
+        {
+          id: "text4",
+          content: "Emma",
+          xPercent: 68,
+          yPercent: 56,
+          rotation: 11,
+          fontSize: 12,
+        },
+        {
+          id: "text5",
+          content: "Jake",
+          xPercent: 61,
+          yPercent: 66,
+          rotation: 48,
+          fontSize: 12,
+        },
+      ],
+    },
+    5: {
+      textFields: [
+        {
+          id: "text1",
+          content: "Grandpa",
+          xPercent: 41,
+          yPercent: 52,
+          rotation: 1,
+          fontSize: 16,
+        },
+        {
+          id: "text2",
+          content: "Sarah",
+          xPercent: 55,
+          yPercent: 34,
+          rotation: -75,
+          fontSize: 12,
+        },
+        {
+          id: "text3",
+          content: "Kelvin",
+          xPercent: 66,
+          yPercent: 40,
+          rotation: -39,
+          fontSize: 12,
+        },
+        {
+          id: "text4",
+          content: "Emma",
+          xPercent: 68,
+          yPercent: 51,
+          rotation: 3,
+          fontSize: 12,
+        },
+        {
+          id: "text5",
+          content: "Jake",
+          xPercent: 63,
+          yPercent: 61,
+          rotation: 43,
+          fontSize: 12,
+        },
+        {
+          id: "text6",
+          content: "Lily",
+          xPercent: 55,
+          yPercent: 67,
+          rotation: 72,
+          fontSize: 12,
+        },
+      ],
+    },
+    6: {
+      textFields: [
+        {
+          id: "text1",
+          content: "Grandpa",
+          xPercent: 40,
+          yPercent: 53,
+          rotation: 2,
+          fontSize: 16,
+        },
+        {
+          id: "text2",
+          content: "Sarah",
+          xPercent: 51,
+          yPercent: 33,
+          rotation: -90,
+          fontSize: 12,
+        },
+        {
+          id: "text3",
+          content: "Kelvin",
+          xPercent: 62,
+          yPercent: 36,
+          rotation: -60,
+          fontSize: 12,
+        },
+        {
+          id: "text4",
+          content: "Emma",
+          xPercent: 68,
+          yPercent: 45,
+          rotation: -28,
+          fontSize: 12,
+        },
+        {
+          id: "text5",
+          content: "Jake",
+          xPercent: 67,
+          yPercent: 55,
+          rotation: 8,
+          fontSize: 12,
+        },
+        {
+          id: "text6",
+          content: "Lily",
+          xPercent: 61,
+          yPercent: 64,
+          rotation: 45,
+          fontSize: 12,
+        },
+        {
+          id: "text7",
+          content: "Noah",
+          xPercent: 50,
+          yPercent: 68,
+          rotation: 89,
+          fontSize: 12,
+        },
+      ],
+    },
+  },
+  toolsWhite: {
+    1: {
+      textFields: [
+        {
+          id: "text1",
+          content: "Grandpa",
+          xPercent: 42,
+          yPercent: 53,
+          rotation: 1,
+          fontSize: 16,
+        },
+        {
+          id: "text2",
+          content: "Sarah",
+          xPercent: 70,
+          yPercent: 51,
           rotation: -5,
           fontSize: 12,
         },
@@ -269,7 +753,7 @@ const defaultTemplates = {
           id: "text1",
           content: "Grandpa",
           xPercent: 42,
-          yPercent: 52,
+          yPercent: 51,
           rotation: 1,
           fontSize: 16,
         },
@@ -278,15 +762,15 @@ const defaultTemplates = {
           content: "Sarah",
           xPercent: 70,
           yPercent: 45,
-          rotation: -16,
+          rotation: -11,
           fontSize: 12,
         },
         {
           id: "text3",
           content: "Kelvin",
-          xPercent: 70,
+          xPercent: 69,
           yPercent: 55,
-          rotation: 6,
+          rotation: 9,
           fontSize: 12,
         },
       ],
@@ -296,33 +780,33 @@ const defaultTemplates = {
         {
           id: "text1",
           content: "Grandpa",
-          xPercent: 42,
-          yPercent: 52,
+          xPercent: 43,
+          yPercent: 53,
           rotation: 1,
           fontSize: 16,
         },
         {
           id: "text2",
           content: "Sarah",
-          xPercent: 67,
-          yPercent: 39,
-          rotation: -35,
+          xPercent: 66,
+          yPercent: 40,
+          rotation: -29,
           fontSize: 12,
         },
         {
           id: "text3",
           content: "Kelvin",
           xPercent: 70,
-          yPercent: 49,
-          rotation: -6,
+          yPercent: 50,
+          rotation: -2,
           fontSize: 12,
         },
         {
           id: "text4",
           content: "Emma",
-          xPercent: 67,
+          xPercent: 66,
           yPercent: 61,
-          rotation: 28,
+          rotation: 31,
           fontSize: 12,
         },
       ],
@@ -332,41 +816,41 @@ const defaultTemplates = {
         {
           id: "text1",
           content: "Grandpa",
-          xPercent: 42,
-          yPercent: 52,
-          rotation: 1,
+          xPercent: 43,
+          yPercent: 53,
+          rotation: 2,
           fontSize: 16,
         },
         {
           id: "text2",
           content: "Sarah",
-          xPercent: 62,
-          yPercent: 35,
-          rotation: -55,
+          xPercent: 61,
+          yPercent: 36,
+          rotation: -50,
           fontSize: 12,
         },
         {
           id: "text3",
           content: "Kelvin",
           xPercent: 70,
-          yPercent: 44,
-          rotation: -14,
+          yPercent: 45,
+          rotation: -15,
           fontSize: 12,
         },
         {
           id: "text4",
           content: "Emma",
           xPercent: 69,
-          yPercent: 54,
-          rotation: 7,
+          yPercent: 55,
+          rotation: 11,
           fontSize: 12,
         },
         {
           id: "text5",
           content: "Jake",
           xPercent: 62,
-          yPercent: 65,
-          rotation: 45,
+          yPercent: 66,
+          rotation: 48,
           fontSize: 12,
         },
       ],
@@ -384,8 +868,8 @@ const defaultTemplates = {
         {
           id: "text2",
           content: "Sarah",
-          xPercent: 58,
-          yPercent: 33,
+          xPercent: 57,
+          yPercent: 34,
           rotation: -75,
           fontSize: 12,
         },
@@ -393,32 +877,32 @@ const defaultTemplates = {
           id: "text3",
           content: "Kelvin",
           xPercent: 67,
-          yPercent: 39,
-          rotation: -45,
+          yPercent: 40,
+          rotation: -39,
           fontSize: 12,
         },
         {
           id: "text4",
           content: "Emma",
-          xPercent: 70,
-          yPercent: 50,
-          rotation: -1,
+          xPercent: 69,
+          yPercent: 51,
+          rotation: 3,
           fontSize: 12,
         },
         {
           id: "text5",
           content: "Jake",
-          xPercent: 66,
+          xPercent: 65,
           yPercent: 61,
-          rotation: 44,
+          rotation: 43,
           fontSize: 12,
         },
         {
           id: "text6",
           content: "Lily",
-          xPercent: 57,
-          yPercent: 66,
-          rotation: 73,
+          xPercent: 56,
+          yPercent: 67,
+          rotation: 72,
           fontSize: 12,
         },
       ],
@@ -428,56 +912,56 @@ const defaultTemplates = {
         {
           id: "text1",
           content: "Grandpa",
-          xPercent: 43,
+          xPercent: 42,
           yPercent: 52,
-          rotation: 2,
+          rotation: 1,
           fontSize: 16,
         },
         {
           id: "text2",
           content: "Sarah",
-          xPercent: 53,
+          xPercent: 52,
           yPercent: 33,
-          rotation: -87,
+          rotation: -89,
           fontSize: 12,
         },
         {
           id: "text3",
           content: "Kelvin",
-          xPercent: 64,
-          yPercent: 35,
-          rotation: -58,
+          xPercent: 63,
+          yPercent: 36,
+          rotation: -57,
           fontSize: 12,
         },
         {
           id: "text4",
           content: "Emma",
-          xPercent: 70,
-          yPercent: 45,
-          rotation: -24,
-          fontSize: 12,
+          xPercent: 69,
+          yPercent: 46,
+          rotation: -19,
+          fontSize: 11,
         },
         {
           id: "text5",
           content: "Jake",
           xPercent: 68,
           yPercent: 55,
-          rotation: 6,
+          rotation: 8,
           fontSize: 12,
         },
         {
           id: "text6",
           content: "Lily",
-          xPercent: 63,
-          yPercent: 64,
-          rotation: 47,
+          xPercent: 62,
+          yPercent: 63,
+          rotation: 45,
           fontSize: 12,
         },
         {
           id: "text7",
           content: "Noah",
-          xPercent: 52,
-          yPercent: 68,
+          xPercent: 51,
+          yPercent: 67,
           rotation: 89,
           fontSize: 12,
         },
@@ -1245,7 +1729,7 @@ let currentCategory = "soccer";
 let currentKids = 1;
 let currentColor = "Black";
 let currentTemplates = JSON.parse(
-  JSON.stringify(defaultTemplates[currentCategory])
+  JSON.stringify(defaultTemplates["soccerBlack"])
 );
 let textOverlays = {};
 let selectedOverlay = null;
@@ -1265,7 +1749,6 @@ const exportBtn = document.getElementById("exportBtn");
 function init() {
   setupEventListeners();
   updateImageSource();
-  updateTemplate();
 }
 
 function setupEventListeners() {
@@ -1311,38 +1794,6 @@ function storeOriginalValues() {
   });
 }
 
-// function handleCategoryChange(e) {
-//   // Update selected style
-//   const colorVariant = document.querySelector(".color-variants");
-//   document.querySelectorAll(".category-variant").forEach((variant) => {
-//     variant.classList.remove("selected");
-//   });
-//   e.target.classList.add("selected");
-
-//   currentCategory = e.target.dataset.category;
-//   currentTemplates = JSON.parse(
-//     JSON.stringify(defaultTemplates[currentCategory])
-//   );
-//   if (currentCategory === "printFile") {
-//     colorVariant.style.display = "none";
-//   } else {
-//     colorVariant.style.display = "flex";
-//   }
-//   updateImageSource();
-//   updateTemplate();
-// }
-
-function handleKidsChange(e) {
-  // Update selected style
-  document.querySelectorAll(".kids-options .option-item").forEach((item) => {
-    item.classList.remove("selected");
-  });
-  e.target.parentElement.classList.add("selected");
-
-  currentKids = parseInt(e.target.value);
-  updateImageSource();
-}
-
 function handleCategoryChange(e) {
   // Update selected style
   document.querySelectorAll(".category-variant").forEach((variant) => {
@@ -1354,7 +1805,6 @@ function handleCategoryChange(e) {
 
   if (currentCategory === "printFile") {
     colorVariant.style.display = "none";
-    currentCategory = e.target.dataset.category;
     currentTemplates = JSON.parse(
       JSON.stringify(defaultTemplates[currentCategory])
     );
@@ -1372,15 +1822,18 @@ function handleCategoryChange(e) {
     );
   }
 
-  // Toggle color selector visibility
-  const colorSelector = document.getElementById("color-selector");
-  if (colorSelector) {
-    colorSelector.style.display =
-      currentCategory === "printFile" ? "none" : "block";
-  }
-
   updateImageSource();
-  updateTemplate();
+}
+
+function handleKidsChange(e) {
+  // Update selected style
+  document.querySelectorAll(".kids-options .option-item").forEach((item) => {
+    item.classList.remove("selected");
+  });
+  e.target.parentElement.classList.add("selected");
+
+  currentKids = parseInt(e.target.value);
+  updateImageSource();
 }
 
 function handleColorChange(e) {
