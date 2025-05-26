@@ -773,6 +773,8 @@ let selectedOverlay = null;
 let isDragging = false;
 let dragStartPos = { x: 0, y: 0 };
 
+const deltaX = 50;
+
 // DOM elements
 const baseImage = document.getElementById("baseImage");
 const skeleton = document.getElementById("imageSkeleton");
@@ -1293,7 +1295,6 @@ function handleMouseMove(e) {
     const isLeftOverlay = selectedOverlay.dataset.fieldId.includes("-left");
     const leftOverlay = textOverlays[`${fieldId}-left`];
     const rightOverlay = textOverlays[`${fieldId}-right`];
-    const deltaX = field.xPercentRight - field.xPercentLeft;
 
     if (leftOverlay) {
       leftOverlay.style.left = isLeftOverlay
@@ -1315,7 +1316,6 @@ function handleMouseMove(e) {
   // Update template data
   if (field) {
     if (currentCategory === "printFile") {
-      const deltaX = field.xPercentRight - field.xPercentLeft;
       if (selectedOverlay.dataset.fieldId.includes("-left")) {
         field.xPercentLeft = Math.round(xPercent);
         field.xPercentRight = Math.round(xPercent + deltaX);
