@@ -660,10 +660,10 @@ function createTextControls() {
                 <div class="control-buttons">
                   <button class="control-btn" onclick="adjustField('${
                     field.id
-                  }', 'xPercent', -1)">-</button>
+                  }', 'xPercent', -0.5)">-</button>
                   <button class="control-btn" onclick="adjustField('${
                     field.id
-                  }', 'xPercent', 1)">+</button>
+                  }', 'xPercent', 0.5)">+</button>
                 </div>
               </div>
               
@@ -672,10 +672,10 @@ function createTextControls() {
                 <div class="control-buttons">
                   <button class="control-btn" onclick="adjustField('${
                     field.id
-                  }', 'yPercent', -1)">-</button>
+                  }', 'yPercent', -0.5)">-</button>
                   <button class="control-btn" onclick="adjustField('${
                     field.id
-                  }', 'yPercent', 1)">+</button>
+                  }', 'yPercent', 0.5)">+</button>
                 </div>
               </div>
               

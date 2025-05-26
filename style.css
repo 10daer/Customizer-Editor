@@ -50,8 +50,8 @@
 }
 
 @font-face {
-  font-family: "Dainty";
-  src: url("DaintyFusion.otf") format("opentype");
+  font-family: "PatrickHand";
+  src: url("PatrickHand.ttf") format("truetype");
 }
 
 body {
@@ -182,7 +182,7 @@ h1 {
   line-height: 1;
   color: #000000;
   font-size: clamp(8px, 1.25vw, 14px);
-  font-family: "Dainty", serif;
+  font-family: "PatrickHand", serif;
   white-space: nowrap;
   transition: all 0.3s ease;
   cursor: move;
